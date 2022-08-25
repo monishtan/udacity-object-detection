@@ -13,7 +13,7 @@ The setup for the code follows in the exact same manner as the [Instructions Pro
 ### 1. Dataset Analysis
 The following pictures show the training images and the ground-truth bounding boxes as labelled in the training dataset. Ten sample images are shown below. 
 
-The imgages are taken in both commercial and residential urban settings. They contain a mix of vehicle and pedestrian obstacles labelled by red and blue bounding boxes respectively. The images are taken in various lighting conditions such as bright day, fogggy day and night. Some images also show blurry v/s sharp image quality.
+The images are taken in both commercial and residential urban settings. They contain a mix of vehicle and pedestrian obstacles labelled by red and blue bounding boxes respectively. The images are taken in various lighting conditions such as bright day, fogggy day and night. Some images also show blurry v/s sharp image quality.
 
 ![](Exp-1.png)
 
@@ -34,6 +34,10 @@ The imgages are taken in both commercial and residential urban settings. They co
 ![](Exp-9.png)
 
 ![](Exp-10.png)
+
+The following figure shows the distribution of object classes across the training dataset. The images have a high percentage of vehicles, some pedestrians and very few cyclists. There are no signs marked as obstacles in the dataset. 
+
+![](img.png)
 
 ### 2. Cross-Validation
 This project uses the hold out method of cross validation. The complete dataset is available as a collection of 99 .tfrecord files. These are randomly split into    
